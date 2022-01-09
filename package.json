@@ -1,0 +1,37 @@
+{
+  "name": "webpack-bolerplate",
+  "version": "1.0.0",
+  "description": "Webpack Boilerplate for HTML - SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donjose/webpack-boilerplate.git"
+  },
+  "keywords": [
+    "webpack",
+    "scss",
+    "bolerplate"
+  ],
+  "author": "Roman Hnatko <roman@gnatko.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donjose/webpack-bolerplate/issues"
+  },
+  "homepage": "https://github.com/donjose/webpack-bolerplate#readme",
+  "dependencies": {
+    "normalize-css": "^2.3.1"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^2.4.6",
+    "node-sass": "^7.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-copy-plugin": "^0.0.4",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-html-plugin": "^0.1.1"
+  }
+}
