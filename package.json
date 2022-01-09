@@ -4,7 +4,8 @@
   "description": "Webpack Boilerplate for HTML - SCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx webpack --mode=development",
+    "prod": "npx webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -20,13 +21,16 @@
   "bugs": {
     "url": "https://github.com/donjose/webpack-bolerplate/issues"
   },
-  "homepage": "https://github.com/donjose/webpack-bolerplate#readme",
+  "homepage": "https://github.com/donjose/webpack-boilerplate#readme",
   "dependencies": {
     "normalize-css": "^2.3.1"
   },
   "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.6",
     "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
