@@ -4,12 +4,12 @@ const CopyWebpackPlugin = require("webpack-copy-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	context: path.resolve(__dirname),
-	mode: 'production',
 	entry: {
 		scripts: './src/js/scripts.js',
 		styles: './src/scss/style.scss',
 
 	},
+
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].min.js',
@@ -51,6 +51,13 @@ module.exports = {
 				}
 			}
 		]
+	},
+	devServer: {
+		static: {
+			directory: path.join(__dirname, 'dist'),
+		},
+		compress: true,
+		port: 9001,
 	},
 	plugins: [
 		new HTMLWebpackPlugin({

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack --mode=development",
-    "prod": "npx webpack --mode=production"
+    "prod": "npx webpack --mode=production",
+    "watch": "npx webpack serve --mode=development"
   },
   "repository": {
     "type": "git",
