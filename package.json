@@ -1,7 +1,7 @@
 {
-  "name": "webpack-bolerplate",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "description": "Webpack Boilerplate for HTML - SCSS",
+  "description": "Webpack Boilerplate for Frontend HTML/Js/SCSS development",
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack --mode=development",

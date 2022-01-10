@@ -7,12 +7,10 @@ module.exports = {
 	entry: {
 		scripts: './src/js/scripts.js',
 		styles: './src/scss/style.scss',
-
 	},
-
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].min.js',
+		filename: 'js/[name].bundle.js',
 		clean: true,
 	},
 	optimization: {
@@ -62,10 +60,13 @@ module.exports = {
 	plugins: [
 		new HTMLWebpackPlugin({
 			template: './src/index.html',
+			inject : 'body',
+			scriptLoading : 'defer',
 			removeComments: false,
 			removeScriptTypeAttributes: true,
 			removeStyleLinkTypeAttributes: false,
-
+			hash: true,
+			minify: false
 		}),
 		new miniCssExtractPlugin({
 			filename: 'css/[name].min.css',
