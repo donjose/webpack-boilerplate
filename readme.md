@@ -4,8 +4,10 @@ Simply Webpack 5.0 Boilerplate for HTML/Js/SCSS frontend development
 
 ### Installation:
 ```
-$ git clone donjose/webpack-boilerplate your-new-project-folder
+$ git clone https://github.com/donjose/webpack-boilerplate your-new-project-folder
 ```
+### Edit package.json
+Edit package.json according to your project. Change name, repository url, keywords and other stuff,  
 Install the dependencies
 ```
 $ cd your-new-project-folder
